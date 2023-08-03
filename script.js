@@ -91,14 +91,17 @@ function nextQuestion() {
 }
 
 function restartQuiz() {
-  document.getElementById('playerName').value = '';
+  playerName = ''; // Vaciar el nombre del jugador
+  document.getElementById('playerName').value = ''; // Limpiar el campo de entrada
   document.getElementById('results').style.display = 'none';
   document.querySelectorAll('input[type=radio]').forEach((radio) => {
     radio.disabled = false;
     radio.parentNode.style.color = 'black';
+    radio.checked = false; // Desmarcar las opciones seleccionadas previamente
   });
   currentQuestion = 1;
   correctAnswers = 0;
   document.getElementById('nextButton').style.display = 'block';
-  startQuiz();
+  document.getElementById('quizScreen').style.display = 'none'; // Ocultar la pantalla de preguntas
+  document.getElementById('welcomeScreen').style.display = 'block'; // Mostrar la pantalla de bienvenida
 }
