@@ -1,1 +1,2 @@
 # TriviaMakeit
+Se desarrolló una aplicación web de trivia con dos pantallas. La primera pantalla muestra un campo de entrada para el nombre del jugador y un botón para comenzar la trivia. La segunda pantalla muestra las preguntas y opciones de respuesta. Al hacer clic en el botón "Responder y ver resultados", se muestra el número de respuestas correctas. El botón "Volver a jugar" redirige a la pantalla inicial para jugar nuevamente con otro nombre.

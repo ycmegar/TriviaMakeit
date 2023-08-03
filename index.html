@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trivia</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <!-- Pantalla de bienvenida -->
+  <div id="welcomeScreen" class="screen">
+    <h1>Bienvenido/a a la Trivia</h1>
+    <label for="playerName">Ingresa tu nombre:</label>
+    <input type="text" id="playerName">
+    <button onclick="startQuiz()">Jugar</button>
+  </div>
+
+  <!-- Pantalla de preguntas -->
+  <div id="quizScreen" class="screen" style="display: none;">
+    <h1 id="welcomeMessage"></h1>
+    <div class="question" id="question1" style="display: none;">
+      <p>1. ¿Cuál es la capital de Colombia?</p>
+      <label><input type="radio" name="q1" value="a"> Medellín</label>
+      <label><input type="radio" name="q1" value="b"> Bogotá</label>
+      <label><input type="radio" name="q1" value="c"> Cali</label>
+      <button onclick="checkAnswer('q1')">Responder</button>
+    </div>
+    <div class="question" id="question2" style="display: none;">
+      <p>2. ¿Cuánto es 7x7?</p>
+      <label><input type="radio" name="q2" value="a"> 49</label>
+      <label><input type="radio" name="q2" value="b"> 64</label>
+      <label><input type="radio" name="q2" value="c"> 52</label>
+      <button onclick="checkAnswer('q2')">Responder</button>
+    </div>
+    <div class="question" id="question3" style="display: none;">
+      <p>3. ¿Qué aparato no es un medio de comunicación?</p>
+      <label><input type="radio" name="q3" value="a"> radio</label>
+      <label><input type="radio" name="q3" value="b"> tv</label>
+      <label><input type="radio" name="q3" value="c"> megáfono</label>
+      <button onclick="checkAnswer('q3')">Responder</button>
+    </div>
+    <div id="results" style="display: none;"></div>
+    <button onclick="nextQuestion()" id="nextButton" style="display: none;">Siguiente pregunta</button>
+    <button onclick="restartQuiz()">Volver a jugar</button>
+  </div>  
+
+  <script src="script.js"></script>
+</body>
+</html>

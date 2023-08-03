@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .screen {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .screen h1, .screen h2, .screen p {
+    margin: 10px 0;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  #quizScreen {
+    display: none;
+  }
+  
